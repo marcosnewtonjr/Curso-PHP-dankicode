@@ -4,10 +4,10 @@
 
     $nome = 'Marcos';
 
-    if($nome == 'Marcos') {
+    if($nome == 'Bolota') {
         echo 'Tudo certo! <hr>';
     } else {
-        die();
+        die('O script parou de ser executado!');
     }
 
     // A função sleep coloca o servidor para dormir, atrasando a execução do código.
