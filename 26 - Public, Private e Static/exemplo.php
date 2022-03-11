@@ -1,6 +1,6 @@
 <?php
 
-    // Public funciona em qualquer lugar
+    // Public funciona em qualquer parte do código
     // Private só pode ser acessado dentro da classe
 
     class Exemplo 
