@@ -4,7 +4,7 @@
         // Objeto pessoa
 
         // Private funciona apenas dentro da classe
-        // Public pode ser acessado por fora 
+        // Public funciona em qualquer lugar do c
 
         private $nome = 'Marcos';
         private $idade = "30";
