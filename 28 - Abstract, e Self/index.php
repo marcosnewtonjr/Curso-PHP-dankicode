@@ -13,10 +13,16 @@
     # $classAbstract->func1();
 
     class Principal extends teste {
-
+        public static function metodoEstatico() {
+            echo 'Método Estático';
+        }
+        public function funcao() {
+            self::metodoEstatico(); // A palavra reservada self serve para buscar um método ou propriedade estática
+        }
     }
 
     $principal = new Principal;
     $principal->func1();
+    $principal->funcao();
 
 ?>
