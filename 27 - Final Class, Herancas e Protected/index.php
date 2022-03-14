@@ -10,13 +10,16 @@
 
 
     class Pai {
+        protected function funcaoTeste() {
+            echo 'Chamando função teste';
+        }
         public function mostrarTchau() {
             echo 'Tchau!';
         }
     }
 
     $pai = new Pai;
-    $pai->mostrarTchau();
+    $pai->mostrarTchau();    
 
     $filha = new Filha;
     $filha->mostrarOla();
@@ -28,6 +31,9 @@
         public function mostrarOla() {
             echo 'Olá Mundo!!';
         }
+        public function mostrarProtected() {
+            $this->funcaoTeste();
+        }
     }
 
     echo "<hr>";
@@ -37,6 +43,11 @@
     $filha = new filha;
     $filha->mostrarTchau();
     $filha->mostrarOla();
-    
+
+    echo "<hr>";
+
+    // A função protected igual a private, não pode ser chamada fora da função, mas pode ser herdada.
+
+    $filha->mostrarProtected();
 
 ?>
