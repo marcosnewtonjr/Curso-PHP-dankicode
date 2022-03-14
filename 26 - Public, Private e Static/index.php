@@ -3,7 +3,8 @@
     include ('exemplo.php');
     $exemplo = new Exemplo(); // Instância de objeto
 
-    # $exemplo->$var1 = 'Olá!'; // Não aparece pois foi definida como private
+    # $exemplo->$var1 = 'Olá!'; 
+    // Não aparece pois foi definida como private
 
     $exemplo->var2 = 'Marcos';
     echo $exemplo->var2;
